@@ -1,3 +1,3 @@
 # Mysa
 
-![Logo] (assets/images/mysa.logo.webp)
+![Logo](assets/images/mysa.logo.webp)
