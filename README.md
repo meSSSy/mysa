@@ -18,6 +18,8 @@ And the colours associated with the logo which will be used throughout the websi
 
 ## Wireframes
 
-### Landing page for mobile and desktop
+### Landing page, sign in, contact and price list for mobile
 
-![Mobile](/assets/images/Mobile1.webp)
+![Mobile](assets/images/Mobile1.webp)
+
+![Mobile2](assets/images/Mobile2.webp)
