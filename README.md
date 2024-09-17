@@ -23,3 +23,9 @@ And the colours associated with the logo which will be used throughout the websi
 ![Mobile](assets/images/Mobile1.webp)
 
 ![Mobile2](assets/images/Mobile2.webp)
+
+### Tablet
+
+![Tablet1](assets/images/Tablet1.png)
+
+![Tablet2](assets/images/Tablet2.png)
