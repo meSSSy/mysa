@@ -29,3 +29,9 @@ And the colours associated with the logo which will be used throughout the websi
 ![Tablet1](assets/images/Tablet1.png)
 
 ![Tablet2](assets/images/Tablet2.png)
+
+### Desktop
+
+![Desktop1](assets/images/Desktop1.png)
+
+![Desktop2](assets/images/Desktop2.png)
