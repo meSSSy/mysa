@@ -19,6 +19,6 @@ from django.urls import path, include
 from price_list import views as index_views
 
 urlpatterns = [
-    path('', index_views.index, name='index'),
+    path('price_list/', index_views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
