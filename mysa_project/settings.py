@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',  
     'mysa_project',
     'main_page',
+    'booking_page',
     'cloudinary_storage',
     'cloudinary',
 ]

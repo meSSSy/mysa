@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from main_page import views as index_views
+from booking_page import views as index_views
 
 urlpatterns = [
     path('main_page/', index_views.index, name='main'),
+     path('booking_page/', index_views.index, name='booking'),
     path('admin/', admin.site.urls),
 ]
