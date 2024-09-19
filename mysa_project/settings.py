@@ -35,14 +35,13 @@ ALLOWED_HOSTS = ['8000-messsy-mysa-4cq5hvl08dw.ws.codeinstitute-ide.net', 'mysa-
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+   'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',  
     'mysa_project',
-    'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
 ]
