@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'mysa_project',
     'main_page',
     'booking_page',
+    'signin_page',
     'cloudinary_storage',
     'cloudinary',
 ]
