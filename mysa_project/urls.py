@@ -19,10 +19,13 @@ from django.urls import path, include
 from main_page import views as index_views
 from booking_page import views as views
 from signin_page import views as views
+from price_page import views as views
+
 
 urlpatterns = [
     path("booking_page/", include("booking_page.urls"), name="booking_page"),
     path("main_page/", include("main_page.urls"), name="main_page"),
     path("signin_page/", include("signin_page.urls"), name="signin_page"),
+    path("price_page/", include("price_page.urls"), name="price_page"),
     path("admin/", admin.site.urls),
 ]

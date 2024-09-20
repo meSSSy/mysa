@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'main_page',
     'booking_page',
     'signin_page',
+    'price_page',
     'cloudinary_storage',
     'cloudinary',
 ]
