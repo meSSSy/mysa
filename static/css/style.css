@@ -1,3 +1,169 @@
-h1 {
-    color: red;
+/* Navbar */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    height: 180px;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 180px;
+    width: 220px;
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-right: 30px;
+    margin-left: 15px;
+}
+
+.menu a {
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+    margin-right: 80px;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+}
+
+.book-now-btn {
+    background-color: #fdd0cb;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #ddd;
     }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    #menu-toggle:checked + .hamburger + .menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 85%;
+    height: 750px; 
+    object-fit: cover; 
+    border: 2px solid #fdd0cb;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book-now-btn1 {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    left: 23%;
+    background-color: #fdd0cb;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+.book-now-btn2 {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    left: 10%;
+    background-color: #cce7dd;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 80px;
+}
