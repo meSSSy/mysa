@@ -113,6 +113,7 @@ body {
     }
 }
 
+/* Hero image and buttons */
 
 .hero {
     position: relative;
@@ -168,6 +169,8 @@ body {
     margin-top: 80px;
 }
 
+/* Main page owner picture and description */
+
 .content-section {
     padding: 50px 0;
 }
@@ -200,5 +203,31 @@ body {
     left: 15%;
     margin-top: 40px;
     text-decoration: underline;
+}
+
+/* Main Page Gallery */
+
+.gallery .row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.gallery .col-3 {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    padding: 80px 20px 20px; 
+    border-radius: 10px;
+    margin-top: 150px;
+    width: 85%; 
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
