@@ -205,29 +205,28 @@ body {
     text-decoration: underline;
 }
 
-/* Main Page Gallery */
-
-.gallery .row {
-    margin-right: -10px;
-    margin-left: -10px;
-}
-
-.gallery .col-3 {
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-}
+/* Main page gallery */
 
 .gallery {
-    padding: 80px 20px 20px; 
-    border-radius: 10px;
-    margin-top: 150px;
-    width: 85%; 
+    margin-top: 200px;
 }
 
 .gallery img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    height: 600px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
+
+.gallery2 img {
+    height: 600px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 12px;
+    margin-top: 20px;  
+}
+
+/* Book consultation section */
 
