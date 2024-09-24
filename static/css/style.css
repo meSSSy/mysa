@@ -237,7 +237,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     padding-top: 110px;
-    background: #f1e8e7;
+    background: #fdd0cb;
     text-align: center;
     justify-content: center;
 }
@@ -262,4 +262,48 @@ body {
     text-decoration: none;
     margin-right: 10px;
     margin-top: 80px;
+}
+
+/* contact section */
+
+.contact-info {
+    height: 300px;
+    width: 85%;
+}
+
+.amy1 {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    padding-top: 80px;
+}
+
+.phone {
+    display: flex;
+    position: absolute;
+    left: 24%;
+    margin-top: 120px;
+}
+
+.email1 {
+    display: flex;
+    position: absolute;
+    left: 22%;
+    margin-top: 155px;
+}
+
+.logo2 img {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+/* Register page */
+
+.register {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        width: 30%;
 }

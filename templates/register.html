@@ -31,5 +31,11 @@ content="width=device-width, initial-scale=1.0">
             </div>
         </div>
     </nav>
+    {% load crispy_forms_tags %}
+    <form method="POST" class="register justify-content-center">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button type="submit" class="btn btn-success">Register</button>
+    </form>
 </body>
 </html>
