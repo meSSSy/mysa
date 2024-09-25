@@ -30,4 +30,5 @@ urlpatterns = [
     path("price_page/", include("price_page.urls"), name="price_page"),
     path("register_page/", include("register_page.urls"), name="register_page"),
     path("admin/", admin.site.urls),
+    path('', include("django.contrib.auth.urls")),
 ]

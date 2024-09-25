@@ -31,5 +31,11 @@ content="width=device-width, initial-scale=1.0">
             </div>
         </div>
     </nav>
+    <form method="post" class="login-page justify-content-center">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Login</button>
+        <p>Not registered? Register <a href="/register_page">here!</a></p>
+    </form>
 </body>
 </html>
