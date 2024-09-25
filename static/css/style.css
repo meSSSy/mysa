@@ -514,4 +514,403 @@ body {
         left: 35%;
      }
 }
+
+@media screen and (min-width: 376px) and (max-width: 425px){
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 71%;
+        left: 35%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 79%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 23%;
+        height: 250px;
+        width: 250px;
+    }
+
+    .right-column p {
+        font-size: 16px;
+        margin-top: 380px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 46%;
+        left: 33%;
+     }
+
+     .gallery {
+        margin-top: 35px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 30px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 35px;
+     }
+
+     .logo2 img {
+        top: 60%;
+        left: 17%;
+     }
+
+     .amy1 {
+        padding-top: 30px;
+        left: 29%;
+     }
+
+     .phone {
+        margin-top: 80px;
+        left: 38%;
+     }
+
+     .email1 {
+        margin-top: 120px;
+        left: 35%;
+     }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 5%;
+        height: 350px;
+        width: 300px;
+    }
+
+    .right-column p {
+        font-size: 16px;
+        margin-top: 100px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 0%;
+        left: 28%;
+     }
+
+     .gallery {
+        margin-top: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 50px;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 60px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 45px;
+     }
+
+     .logo2 img {
+        top: 12%;
+        left: 46%;
+     }
+
+     .amy1 {
+        padding-top: 50px;
+        left: 12%;
+     }
+
+     .phone {
+        margin-top: 100px;
+        left: 17%;
+     }
+
+     .email1 {
+        margin-top: 140px;
+        left: 16%;
+     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 5%;
+        height: 450px;
+        width: 375px;
+    }
+
+    .right-column p {
+        font-size: 19px;
+        margin-top: 100px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 0%;
+        left: 28%;
+     }
+
+     .gallery {
+        margin-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 50px;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 28px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 60px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 45px;
+     }
+
+     .logo2 img {
+        top: 12%;
+        left: 46%;
+     }
+
+     .amy1 {
+        padding-top: 50px;
+        left: 12%;
+     }
+
+     .phone {
+        margin-top: 100px;
+        left: 17%;
+     }
+
+     .email1 {
+        margin-top: 140px;
+        left: 16%;
+     }
+}
  
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 5%;
+        height: 450px;
+        width: 375px;
+    }
+
+    .right-column p {
+        font-size: 22px;
+        margin-top: 100px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 0%;
+        left: 21%;
+     }
+
+     .gallery {
+        margin-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+     .gallery img {
+        height: 400px;
+        width: 300px;
+        margin-top: 50px;
+     }
+
+     .gallery2 img {
+        height: 400px;
+        width: 300px;
+        margin-top: 5px;
+        margin-left: 28px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 60px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 45px;
+     }
+
+     .logo2 img {
+        top: 12%;
+        left: 46%;
+     }
+
+     .amy1 {
+        padding-top: 50px;
+        left: 12%;
+     }
+
+     .phone {
+        margin-top: 100px;
+        left: 17%;
+     }
+
+     .email1 {
+        margin-top: 140px;
+        left: 16%;
+     }
+}
