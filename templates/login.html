@@ -36,8 +36,9 @@ content="width=device-width, initial-scale=1.0">
     <form method="post" class="login-page justify-content-center">
         {% csrf_token %}
         {{ form|crispy}}
-        <button type="submit" class="btn btn-success">Login</button>
         <p>Not registered? Register <a href="/register_page">here!</a></p>
+        <button type="submit" class="btn btn-success">Login</button>
+        
     </form>
 </body>
 </html>

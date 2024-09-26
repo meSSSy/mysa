@@ -313,6 +313,19 @@ body {
     left: 28%;
 }
 
+/* Registration Page */
+
+.register {
+   position: absolute;
+   top: 35%;
+   left: 35%;
+}
+
+.btn {
+   background-color: #5f511b;
+   border-color: #5f511b;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 320px) {
@@ -1016,3 +1029,5 @@ body {
         background: #5f511b;
      }
 }
+
+
