@@ -326,6 +326,14 @@ body {
    border-color: #5f511b;
 }
 
+.register-here {
+   position: absolute;
+   top: 28%;
+   left: 42%;
+   z-index: 1;
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 320px) {
@@ -426,6 +434,27 @@ body {
         margin-top: 120px;
         left: 31%;
      }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 1%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 30%;
+      left: 29%;
+      z-index: 1;
+      font-size: 22px;
+   }
+
+   .btn {
+      position: absolute;
+      left: 35%;
+   }
 }
 
 @media screen and (min-width: 326px) and (max-width: 375px) {
@@ -526,6 +555,27 @@ body {
         margin-top: 120px;
         left: 35%;
      }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 1%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 29%;
+      left: 29%;
+      z-index: 1;
+      font-size: 24px;
+   }
+
+   .btn {
+      position: absolute;
+      left: 35%;
+   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px){
@@ -626,6 +676,27 @@ body {
         margin-top: 120px;
         left: 35%;
      }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 1%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 29%;
+      left: 31%;
+      z-index: 1;
+      font-size: 26px;
+   }
+
+   .btn {
+      position: absolute;
+      left: 35%;
+   }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px){
@@ -726,6 +797,27 @@ body {
         margin-top: 140px;
         left: 16%;
      }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 19%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 29%;
+      left: 39%;
+      z-index: 1;
+      font-size: 29px;
+   }
+
+   .btn {
+      position: absolute;
+      left: 35%;
+   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -826,6 +918,28 @@ body {
         margin-top: 140px;
         left: 16%;
      }
+
+     .register {
+      height: 400px;
+      position: absolute;
+      top: 35%;
+      left: 29%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 27%;
+      left: 41%;
+      z-index: 1;
+      font-size: 34px;
+   }
+
+   .btn {
+      position: absolute;
+      left: 35%;
+   }
 }
  
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -926,6 +1040,28 @@ body {
         margin-top: 140px;
         left: 16%;
      }
+
+     .register {
+      height: 400px;
+      position: absolute;
+      top: 30%;
+      left: 34%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 23%;
+      left: 43%;
+      z-index: 1;
+      font-size: 34px;
+   }
+
+   .btn {
+      position: absolute;
+      left: 35%;
+   }
 }
 
 @media screen and (min-width: 1441px) {

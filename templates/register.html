@@ -31,10 +31,12 @@ content="width=device-width, initial-scale=1.0">
             </div>
         </div>
     </nav>
-
+    
+    <h3 class="register-here">Register Here!</h3>
     <div class="hero mt-5 pt-5">
         <img src="{% static 'assets/images/moose.jpg' %}" alt="Background Image">
     </div>
+    
     {% load crispy_forms_tags %}
     <form method="POST" class="register justify-content-center">
         {% csrf_token %}
