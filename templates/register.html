@@ -37,5 +37,17 @@ content="width=device-width, initial-scale=1.0">
         {{form|crispy}}
         <button type="submit" class="btn btn-success">Register</button>
     </form>
+    {% if form.errors %}
+    <div class="error-messages">
+        {% for field in form %}
+            {% for error in field.errors %}
+              
+            {% endfor %}
+        {% endfor %}
+        {% for error in form.non_field_errors %}
+            <p>{{ error }}</p>
+        {% endfor %}
+    </div>
+{% endif %}
 </body>
 </html>
