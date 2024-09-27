@@ -23,9 +23,14 @@ content="width=device-width, initial-scale=1.0">
             <div class="menu-wrapper">
                 <ul class="menu">
                     <li><a href="{% url 'main_page' %}">Home</a></li>
-                    <li><a href="{% url 'register_page' %}">Register</a></li>
-                    <li><a href="{% url 'signin_page' %}">Sign-In</a></li>
                     <li><a href="{% url 'price_page' %}">Price List</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'profile_page' %}">Profile</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li> 
+                    {% else %}
+                        <li><a href="{% url 'register_page' %}">Register</a></li>
+                        <li><a href="{% url 'signin_page' %}">Sign-In</a></li>
+                    {% endif %}
                     <li class="mobile-only"><a href="{% url 'booking_page' %}" class="book-now-btn">Book Now</a></li>
                     <li class="mobile-only social-icons">
                         <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>

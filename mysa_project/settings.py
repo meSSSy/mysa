@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'signin_page',
     'price_page',
     'register_page',
+    'profile_page',
     'cloudinary_storage',
     'cloudinary',
     'crispy_forms',
@@ -147,3 +148,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ['https://*.ws.codeinstitute-ide.net']
 
 CRISPY_TEMPLATE_PACK="bootstrap4"
+
+LOGOUT_REDIRECT_URL = '/main_page/'

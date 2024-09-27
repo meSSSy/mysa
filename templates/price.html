@@ -11,23 +11,37 @@ content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{% static 'css/style.css'%}" >
 </head>
 <body>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
-                <img src="{% static 'assets/images/mysalogo.png' %}" href="index.html" alt="Logo">
+                <a href="{% url 'main_page' %}">
+                    <img src="{% static 'assets/images/mysalogo.png' %}" alt="Logo">
+                </a>
             </div>
-            <input type="checkbox" id="menu-toggle">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">&#9776;</label>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="signin.html">Sign-In</a></li>
-                <li><a href="price.html">Price List</a></li>
-            </ul>
-            <div class="right-menu">
-                <a href="booking.html" class="book-now-btn">Book Now</a>
-                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li><a href="{% url 'main_page' %}">Home</a></li>
+                    <li><a href="{% url 'price_page' %}">Price List</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'profile_page' %}">Profile</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li> 
+                    {% else %}
+                        <li><a href="{% url 'register_page' %}">Register</a></li>
+                        <li><a href="{% url 'signin_page' %}">Sign-In</a></li>
+                    {% endif %}
+                    <li class="mobile-only"><a href="{% url 'booking_page' %}" class="book-now-btn">Book Now</a></li>
+                    <li class="mobile-only social-icons">
+                        <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-menu desktop-only">
+                <a href="{% url 'booking_page' %}" class="book-now-btn">Book Now</a>
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </nav>
