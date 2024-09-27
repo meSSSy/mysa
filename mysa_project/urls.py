@@ -23,6 +23,7 @@ from price_page import views as views
 from register_page import views as views
 from profile_page import views as views
 from django.contrib.auth.views import LogoutView
+from django.contrib.auth.models import User
 
 
 urlpatterns = [

@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
-from django.contrib.auth.models import user
+from django.contrib.auth.models import User
+
 
 TREATMENT_CHOICES = (
     ("Anti Wrinkle - Consultation", "Anti Wrinkle - Consultation"),
@@ -46,5 +47,6 @@ class Appointments(models.Model):
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES, default="9AM")
     time_ordered = models.DateTimeField(default=datetime.now, blank=True)
-    def_str_(self)
-    return f"{self.user.username} | day: {self.day} | time: {self.time}"
+    
+    def __str__(self):
+        return f"{self.user.username} | day: {self.day} | time: {self.time}"
