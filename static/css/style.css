@@ -358,6 +358,18 @@ body {
     top: 30%;
 }
 
+.location {
+   position: absolute;
+   top: 18%;
+   left: 72%;
+}
+
+.address {
+   position: absolute;
+   left: 72%;
+   top: 37%;
+}
+
 /* Register page */
 
 .register {
