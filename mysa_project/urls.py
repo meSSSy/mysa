@@ -28,6 +28,7 @@ from django.views.generic import RedirectView
 
 
 urlpatterns = [
+    path("accounts/", include("allauth.urls")),
     path('', RedirectView.as_view(url='/main_page/', permanent=True)),
     path("booking_page/", include("booking_page.urls"), name="booking_page"),
     path("main_page/", include("main_page.urls"), name="main_page"),

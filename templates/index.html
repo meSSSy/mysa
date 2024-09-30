@@ -45,6 +45,16 @@ content="width=device-width, initial-scale=1.0">
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="signin-message">
+    {% if user.is_authenticated %}
+        <p class="text-end m-3">Welcome {{ user }} you are logged in</p>
+        {% else %}
+        <p class="text-end m-3">You are not currently logged in</p>
+        {% endif %}
+         </div>
+    </div>
+
     <div class="hero mt-5 pt-5">
         <img src="{% static 'assets/images/hero.webp' %}" alt="Hero Image">
         <h3>Enhance Your Natural Glow at Mysa</h3>

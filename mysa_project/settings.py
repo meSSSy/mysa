@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',  
+    'django.contrib.staticfiles', 
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'mysa_project',
     'main_page',
     'booking_page',
@@ -54,6 +58,10 @@ INSTALLED_APPS = [
     'crispy_bootstrap4',
 ]
 
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/main_page'
+LOGOUT_REDIRECT_URL = '/main_page/'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -63,6 +71,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'mysa_project.urls'
@@ -120,6 +129,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -149,4 +160,4 @@ CSRF_TRUSTED_ORIGINS = ['https://*.ws.codeinstitute-ide.net']
 
 CRISPY_TEMPLATE_PACK="bootstrap4"
 
-LOGOUT_REDIRECT_URL = '/main_page/'
+
