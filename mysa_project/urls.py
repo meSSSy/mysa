@@ -35,7 +35,7 @@ urlpatterns = [
     path("signin_page/", include("signin_page.urls"), name="signin_page"),
     path("price_page/", include("price_page.urls"), name="price_page"),
     path("register_page", include("register_page.urls"), name="register_page"),
-    path("profile_page/", include("profile_page.urls"), name="profile_page"),
+    path("profile_page", include("profile_page.urls"), name="profile_page"),
     path("admin/", admin.site.urls),
     path('', include("django.contrib.auth.urls")),
     path('logout/', LogoutView.as_view(next_page='main_page'), name='logout'),
