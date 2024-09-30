@@ -51,5 +51,18 @@
         <h1>Welcome, {{ user.username }}!</h1>
         <p>This is your profile page.</p>
     {% endblock %}
+
+    <h1>Welcome, {{ user.username }}</h1>
+    
+    <h2>Your Appointments</h2>
+    <ul>
+        {% for appointment in appointments %}
+            <li>{{ appointment.treatment }} on {{ appointment.day }} at {{ appointment.time }}</li>
+        {% empty %}
+            <li>You have no appointments.</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{% url 'book_appointment' %}">Book a new appointment</a>
 </body>
 </html>

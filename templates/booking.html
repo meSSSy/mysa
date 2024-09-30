@@ -45,5 +45,13 @@ content="width=device-width, initial-scale=1.0">
             </div>
         </div>
     </nav>
+
+    <h1>Book an Appointment</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Book</button>
+    </form>
+    <a href="{% url 'appointments' %}">View your appointments</a>
 </body>
 </html>
