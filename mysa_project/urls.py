@@ -16,27 +16,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from main_page import views as index_views
-from booking_page import views as views
-from signin_page import views as views
-from price_page import views as views
-from register_page import views as views
-from profile_page import views as views
 from django.contrib.auth.views import LogoutView
-from django.contrib.auth.models import User
-from django.views.generic import RedirectView
-
+from main_page import views as main_views
+from booking_page import views as booking_views
 
 urlpatterns = [
-    path("accounts/", include("allauth.urls")),
-    path('', RedirectView.as_view(url='/main_page/', permanent=True)),
-    path("booking_page/", include("booking_page.urls"), name="booking_page"),
-    path("main_page/", include("main_page.urls"), name="main_page"),
-    path("signin_page/", include("signin_page.urls"), name="signin_page"),
-    path("price_page/", include("price_page.urls"), name="price_page"),
-    path("register_page", include("register_page.urls"), name="register_page"),
-    path("profile_page", include("profile_page.urls"), name="profile_page"),
-    path("admin/", admin.site.urls),
-    path('', include("django.contrib.auth.urls")),
-    path('logout/', LogoutView.as_view(next_page='main_page'), name='logout'),
+    path('admin/', admin.site.urls), 
+    path('main_page/', include('main_page.urls')),
+    path('booking_page/', include([
+        path('', booking_views.booking_page, name='booking_page'),
+        path('create/', booking_views.CreateBooking.as_view(), name='create_booking'),
+        path('edit/<int:pk>/', booking_views.BookingEdit.as_view(), name='edit_booking'),
+        path('delete/<int:pk>/', booking_views.DeleteBooking.as_view(), name='delete_booking'),
+    ])),
+    path('signin_page/', include('signin_page.urls')),
+    path('price_page/', include('price_page.urls')),
+    path('register_page/', include('register_page.urls')),
+    path('profile_page/', include('profile_page.urls')),
+    path('', include('django.contrib.auth.urls')),
+    path('logout/', LogoutView.as_view(next_page='home'), name='logout'),
 ]
