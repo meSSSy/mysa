@@ -57,7 +57,6 @@ content="width=device-width, initial-scale=1.0">
     <form method="POST" enctype="multipart/form-data" class="text-center w-75 mx-auto p-2 booking-section">
         {% csrf_token %}
         {% if form.non_field_errors %}
-        <!-- Unavailable booking message -->
         <div class="alert alert-danger text-center w-75 mx-auto my-3" role="alert">
             <em>This date and time combination is unavailable, please choose again.<em>
         </div>
