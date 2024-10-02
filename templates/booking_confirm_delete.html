@@ -1,0 +1,22 @@
+{% load static %}
+
+{% block title %}Delete Booking{% endblock %}
+
+{% block content %}
+
+
+<div class="container text-center">
+    <h1 class="text-center my-2 section-title" id="booking">Confirm Booking Deletion</h1>
+    <div class="d-flex justify-content-center pt-3">
+        <form method="post" class="text-center">
+            {% csrf_token %}
+            <p>Are you sure you want to delete this booking?</p>
+            <input type="submit" class="btn btn-custom booking-btn mx-auto my-3" value="Confirm">
+        </form>
+    </div>
+    <div class="mb-3">
+        <a href="{% url 'booking_page' %}" class="btn btn-custom booking-btn my-3">Back to Bookings</a>
+    </div>
+</div>
+
+{% endblock %}

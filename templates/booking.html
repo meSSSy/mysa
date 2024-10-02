@@ -55,7 +55,7 @@ content="width=device-width, initial-scale=1.0">
         </div>
         <div class="container mt-5">
             <h2>My Bookings</h2>
-            <a href="{% url 'booking:create_booking' %}" class="btn btn-primary mb-3">Create Booking</a>
+            <a href="{% url 'create_booking' %}" class="btn btn-primary mb-3">Create Booking</a>
     
             {% if bookings %}
             <table class="table table-bordered">
@@ -74,8 +74,8 @@ content="width=device-width, initial-scale=1.0">
                         <td>{{ booking.day }}</td>
                         <td>{{ booking.time }}</td>
                         <td>
-                            <a href="{% url 'booking:edit_booking' booking.pk %}" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="{% url 'booking:delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                            <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Delete</a>
                         </td>
                     </tr>
                     {% endfor %}

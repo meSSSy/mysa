@@ -8,7 +8,7 @@ def register_page(request):
         if form.is_valid():
             user = form.save()
             login(request, user) 
-            return redirect("/main_page")
+            return redirect("/")
     else:
         form = RegisterForm()
 

@@ -24,23 +24,23 @@ TREATMENT_CHOICES = (
 )
 
 TIME_CHOICES = (
-    ("9AM", "9AM"),
+    ("9:00AM", "9:00AM"),
     ("9:30AM", "9:30AM"),
-    ("10AM", "10AM"),
+    ("10:00AM", "10:00AM"),
     ("10:30AM", "10:30AM"),
-    ("11AM", "11AM"),
+    ("11:00AM", "11:00AM"),
     ("11:30AM", "11:30AM"),
-    ("12PM", "12PM"),
-    ("2PM", "2PM"),
+    ("12:00PM", "12:00PM"),
+    ("2:00PM", "2:00PM"),
     ("2:30PM", "2:30PM"),
-    ("3PM", "3PM"),
+    ("3:00PM", "3:00PM"),
     ("3:30PM", "3:30PM"),
-    ("4PM", "4PM"),
+    ("4:00PM", "4:00PM"),
     ("4:30PM", "4:30PM"),
-    ("5PM", "5PM"),
+    ("5:00PM", "5:00PM"),
 )
 
-class Appointments(models.Model):
+class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     treatment = models.CharField(max_length=50, choices=TREATMENT_CHOICES, default="Anti Wrinkle")
     day = models.DateField(default=datetime.now)

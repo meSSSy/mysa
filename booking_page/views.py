@@ -4,7 +4,7 @@ from datetime import datetime
 from django.utils import timezone
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
-from .models import Appointments
+from .models import Booking
 from .forms import BookingForm
 from django.views.generic import (
     CreateView,
@@ -17,7 +17,7 @@ class BookingsPage(LoginRequiredMixin, ListView):
     """
     View booking page
     """
-    model = Appointments
+    model = Booking
     template_name = 'booking.html'
     context_object_name = 'bookings'
 
@@ -25,10 +25,10 @@ class CreateBooking(LoginRequiredMixin, CreateView):
     """
     Create a booking for registered users
     """
-    model = Appointments
+    model = Booking
     form_class = BookingForm
     template_name = 'booking_create.html'
-    success_url = reverse_lazy('booking:booking_page')
+    success_url = reverse_lazy('booking_page')
 
     def form_valid(self, form):
         # Set the current user as the booking user
@@ -36,6 +36,7 @@ class CreateBooking(LoginRequiredMixin, CreateView):
 
         selected_date = form.cleaned_data.get('day')
         selected_time_str = form.cleaned_data.get('time')
+        print('selected_time_str', selected_time_str)
         if selected_time_str:
             selected_time = datetime.strptime(selected_time_str, '%I:%M%p').time()
         current_datetime = timezone.now()
@@ -47,7 +48,7 @@ class CreateBooking(LoginRequiredMixin, CreateView):
             return self.form_invalid(form)
 
         # Check the number of active bookings for the current user
-        active_bookings_count = Appointments.objects.filter(
+        active_bookings_count = Booking.objects.filter(
             user=self.request.user).count()
 
         # Limit the maximum number of active bookings to 4
@@ -65,10 +66,10 @@ class BookingEdit(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Edit an already created booking
     """
-    model = Appointments
+    model = Booking
     form_class = BookingForm
     template_name = 'booking_edit.html'
-    success_url = reverse_lazy('booking:booking_page')
+    success_url = reverse_lazy('booking_page')
 
     def test_func(self):
         booking = self.get_object()
@@ -82,7 +83,7 @@ class BookingEdit(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
         # Check if the new time and date are available
         if new_date and new_time:
-            existing_booking = Appointments.objects.filter(
+            existing_booking = Booking.objects.filter(
                 day=new_date,
                 time=new_time).exclude(pk=self.object.pk).first()
             if existing_booking:
@@ -96,9 +97,9 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     Delete a created Booking
     """
-    model = Appointments
+    model = Booking
     template_name = 'booking_confirm_delete.html'
-    success_url = reverse_lazy('booking:booking_page')
+    success_url = reverse_lazy('booking_page')
 
     def test_func(self):
         booking = self.get_object()
