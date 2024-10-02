@@ -326,29 +326,29 @@ body {
 /* contact section */
 
 .contact-info {
-    height: 300px;
-    width: 85%;
+    height: 200px;
+    width: 100%;
 }
 
 .amy1 {
     display: flex;
     position: absolute;
     left: 20%;
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .phone {
     display: flex;
     position: absolute;
     left: 24%;
-    margin-top: 120px;
+    margin-top: 110px;
 }
 
 .email1 {
     display: flex;
     position: absolute;
     left: 22%;
-    margin-top: 155px;
+    margin-top: 145px;
 }
 
 .logo2 img {
@@ -360,14 +360,14 @@ body {
 
 .location {
    position: absolute;
-   top: 18%;
+   top: 27%;
    left: 72%;
 }
 
 .address {
    position: absolute;
    left: 72%;
-   top: 37%;
+   top: 48%;
 }
 
 /* Register page */
@@ -415,12 +415,14 @@ body {
 /* Footer */
 
 .footer {
+   bottom: 0%;
+   width: 100%;
    background-color: black;
    color: white;
    padding: 1rem;
-   width: 100%;
    height: 50px;
 }
+
 .footer1 {
    position: absolute;
    left: 20%;
@@ -439,6 +441,22 @@ body {
    left: 38%;
 }
 
+.section-title {
+   position: absolute;
+   top: 27%;
+   left: 35;
+}
+
+.text-center {
+   margin-top: 90px;
+   background-color: #cce7dd;
+}
+
+.text-center h3 {
+   position: absolute;
+   top: 22%;
+   left: 45%;
+}
 
 /* Media Queries */
 
