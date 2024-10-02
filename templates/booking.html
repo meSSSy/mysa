@@ -40,12 +40,50 @@ content="width=device-width, initial-scale=1.0">
             </div>
             <div class="right-menu desktop-only">
                 <a href="{% url 'booking_page' %}" class="book-now-btn">Book Now</a>
-                <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61550565067850" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mysa_beauty_aesthetics?igsh=cGJxeDlsb2p0NjRx&utm_source=qr" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </nav>
 
+{% block title %}Bookings{% endblock %}
+
+<div class="container my-4 text-center">
+    <div class="row align-items-center">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="section-title mb-3" id="booking">Your Bookings</h1>
+        </div>
+        <div class="container mt-5">
+            <h2>My Bookings</h2>
+            <a href="{% url 'booking:create_booking' %}" class="btn btn-primary mb-3">Create Booking</a>
     
+            {% if bookings %}
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Treatment</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in bookings %}
+                    <tr>
+                        <td>{{ booking.treatment }}</td>
+                        <td>{{ booking.day }}</td>
+                        <td>{{ booking.time }}</td>
+                        <td>
+                            <a href="{% url 'booking:edit_booking' booking.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="{% url 'booking:delete_booking' booking.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p>You have no bookings.</p>
+            {% endif %}
+        </div>
 </body>
 </html>

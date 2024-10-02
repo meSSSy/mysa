@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth.views import LogoutView
@@ -22,17 +23,12 @@ from booking_page import views as booking_views
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path('main_page/', include('main_page.urls')),
-    path('booking_page/', include([
-        path('', booking_views.booking_page, name='booking_page'),
-        path('create/', booking_views.CreateBooking.as_view(), name='create_booking'),
-        path('edit/<int:pk>/', booking_views.BookingEdit.as_view(), name='edit_booking'),
-        path('delete/<int:pk>/', booking_views.DeleteBooking.as_view(), name='delete_booking'),
-    ])),
+    path('BookingsPage/', include('booking_page.urls')),
     path('signin_page/', include('signin_page.urls')),
     path('price_page/', include('price_page.urls')),
     path('register_page/', include('register_page.urls')),
     path('profile_page/', include('profile_page.urls')),
-    path('', include('django.contrib.auth.urls')),
-    path('logout/', LogoutView.as_view(next_page='home'), name='logout'),
+    path('', main_views.index, name='main_page'), 
+    path('logout/', LogoutView.as_view(), name='logout'),
 ]
+

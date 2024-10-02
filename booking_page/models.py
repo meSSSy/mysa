@@ -2,7 +2,6 @@ from django.db import models
 from datetime import datetime
 from django.contrib.auth.models import User
 
-
 TREATMENT_CHOICES = (
     ("Anti Wrinkle - Consultation", "Anti Wrinkle - Consultation"),
     ("Anti Wrinkle - 1 Area", "Anti Wrinkle - 1 Area"),

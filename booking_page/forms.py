@@ -17,6 +17,7 @@ class BookingForm(forms.ModelForm):
             )
         
         self.fields['day'].widget = forms.DateInput(attrs={'type': 'date'})
+        self.fields['time'].widget = forms.Select(choices=self.fields['time'].choices)
 
     def clean(self):
         cleaned_data = super().clean()

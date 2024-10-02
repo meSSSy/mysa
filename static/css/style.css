@@ -431,6 +431,14 @@ body {
    left: 65%;
 }
 
+/* Booking Form */
+
+.container-form {
+   position: absolute;
+   top: 27%;
+   left: 38%;
+}
+
 
 /* Media Queries */
 
