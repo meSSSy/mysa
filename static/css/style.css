@@ -736,6 +736,12 @@ body {
       left: 20%;
       top: 20%;
    }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 32%;
+   }
 }
 
 @media screen and (min-width: 326px) and (max-width: 375px) {
@@ -950,6 +956,12 @@ body {
       left: 25%;
       top: 20%;
    }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 32%;
+   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px){
@@ -1163,6 +1175,25 @@ body {
       position: absolute;
       left: 29%;
       top: 20%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 32%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 40%;
+      top: 119%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
    }
 }
 
@@ -1381,6 +1412,25 @@ body {
       left: 37%;
       top: 20%;
    }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 42%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 63%;
+      top: 65%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1586,6 +1636,25 @@ body {
       position: absolute;
       left: 41%;
       top: 18%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 43%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 63%;
+      top: 50%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
    }
 }
  
@@ -1795,6 +1864,25 @@ body {
       left: 44%;
       top: 18%;
    }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 21%;
+      left: 46%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 66%;
+      top: 47%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
 }
 
 @media screen and (min-width: 1441px) {
@@ -1957,6 +2045,25 @@ body {
 
    .text-center2 {
       width: 100%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 26%;
+      left: 45%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 66%;
+      top: 61%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
    }
 }
 
