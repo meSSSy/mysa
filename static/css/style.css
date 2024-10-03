@@ -730,6 +730,12 @@ body {
    .text-center2 {
       width: 110%;
    }
+
+   .container2 h3 {
+      position: absolute;
+      left: 20%;
+      top: 20%;
+   }
 }
 
 @media screen and (min-width: 326px) and (max-width: 375px) {
@@ -938,6 +944,12 @@ body {
    .text-center2 {
       width: 100%;
    }
+
+   .container2 h3 {
+      position: absolute;
+      left: 25%;
+      top: 20%;
+   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px){
@@ -1145,6 +1157,12 @@ body {
 
    .text-center2 {
       width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 29%;
+      top: 20%;
    }
 }
 
@@ -1357,6 +1375,12 @@ body {
    .text-center2 {
       width: 100%;
    }
+
+   .container2 h3 {
+      position: absolute;
+      left: 37%;
+      top: 20%;
+   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1556,6 +1580,12 @@ body {
 
    .text-center2 {
       width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 41%;
+      top: 18%;
    }
 }
  
@@ -1758,6 +1788,12 @@ body {
 
    .text-center2 {
       width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 44%;
+      top: 18%;
    }
 }
 
