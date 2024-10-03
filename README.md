@@ -4,11 +4,11 @@
 
 ## Description
 
-Mysa (Amy's) - A Beauty and Aesthetic business owned by my partner Amy McHugh. Mysa, a business run from home in a fantasically designed and styled building adjacent to the family home. 
+Mysa (Amy's) - A Beauty and Aesthetic business owned by my partner Amy McHugh. Mysa, a business run from home in a fantasically designed and styled building adjacent to the family home.
 
 ## Planning
 
-A Miro board was created where all ideas for the site were brainstormed. 
+A Miro board was created where all ideas for the site were brainstormed.
 
 ![Miro](assets/images/Miro-Board.webp)
 

@@ -116,21 +116,17 @@ body {
    .menu-wrapper {
        position: absolute;
        top: 100%;
-       left: 0;
-       width: 100%;
+       left: 30%;
+       width: 60%;
        background-color: white;
        max-height: 0;
        overflow: hidden;
        transition: max-height 0.3s ease-out;
+       z-index: 3;
    }
 
    .menu {
        flex-direction: column;
-       padding: 1rem;
-   }
-
-   .menu li {
-       margin: 0.5rem 0;
    }
 
    .desktop-only {
@@ -393,8 +389,34 @@ body {
 }
 
 .btn {
-   background-color: #5f511b;
-   border-color: #5f511b;
+   background-color: #fdd0cb;
+   border-color: #fdd0cb;
+   color: black;
+}
+
+.btn1 {
+   position: absolute;
+   top: 60%;
+   left: 67%;
+   height: 35px;
+   width: 75px;
+   background-color: #fdd0cb;
+   border-color: #fdd0cb;
+}
+
+.btn2 {
+   position: absolute;
+   top: 45%;
+   left: 46%;
+   height: 50px;
+   width: 150px;
+   background-color: #fdd0cb;
+   border-color: #fdd0cb;
+   justify-content: center;
+   padding-top: 11px;
+   text-align: center;
+   color: black;
+   border-radius: 10px;
 }
 
 .register-here {
@@ -452,6 +474,11 @@ body {
    background-color: #cce7dd;
 }
 
+.text-center1 {
+   margin-top: 10px;
+   background-color: #cce7dd;
+}
+
 .text-center h3 {
    position: absolute;
    top: 22%;
@@ -469,6 +496,19 @@ body {
    position: absolute;
    top: 27%;
    left: 45%;
+}
+
+.text-center3 {
+   margin-top: 100px;
+   background-color: #cce7dd;
+   width: 100%;
+   height: 400px;
+   }
+
+.text-center3 h3 {
+   position: absolute;
+   top: 25%;
+   left: 42%;
 }
 
 .create1 {

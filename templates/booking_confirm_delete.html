@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
-<title>Django-Setup</title>
+<title>Mysa | Beauty & Aesthetics</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'css/style.css'%}" >
@@ -46,14 +46,11 @@ content="width=device-width, initial-scale=1.0">
         </div>
     </nav>
 
-
-{% block title %}Delete Booking{% endblock %}
-
 {% block content %}
 
 
-<div class="container text-center">
-    <h1 class="text-center my-2 section-title" id="booking">Confirm Booking Deletion</h1>
+<div class="text-center3">
+    <h3 class="text-center my-2 section-title" id="booking">Confirm Booking Deletion</h1>
     <div class="d-flex justify-content-center pt-3">
         <form method="post" class="text-center">
             {% csrf_token %}
@@ -62,7 +59,7 @@ content="width=device-width, initial-scale=1.0">
         </form>
     </div>
     <div class="mb-3">
-        <a href="{% url 'booking_page' %}" class="btn btn-custom booking-btn my-3">Back to Bookings</a>
+        <a href="{% url 'booking_page' %}" class="btn2 btn-custom booking-btn my-3">Back to Bookings</a>
     </div>
 </div>
 

@@ -48,12 +48,10 @@ content="width=device-width, initial-scale=1.0">
 
 {% load crispy_forms_tags %}
 
-{% block title %}Edit Booking{% endblock %}
-
 {% block content %}
 
-<div class="text-center">
-    <h1 class="text-center section-title mx-auto" id="booking">Edit Booking</h1>
+<div class="text-center2">
+    <h3 class="text-center1 section-title mx-auto" id="booking">Edit Booking</h1>
     <form method="POST" enctype="multipart/form-data" class="text-center w-75 mx-auto p-2 booking-section">
         {% csrf_token %}
         {% if form.non_field_errors %}
@@ -84,8 +82,9 @@ content="width=device-width, initial-scale=1.0">
                 </div>
                 {% endif %}
             </div>
-            <button type="submit" class="btn btn-custom booking-btn">Save</button>
+            <button type="submit" class="btn1 btn-custom booking-btn">Save</button>
     </form>
 </div>
 
 {% endblock %}
+
