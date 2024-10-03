@@ -116,8 +116,8 @@ body {
    .menu-wrapper {
        position: absolute;
        top: 100%;
-       left: 30%;
-       width: 60%;
+       left: 0%;
+       width: 100%;
        background-color: white;
        max-height: 0;
        overflow: hidden;
@@ -625,8 +625,10 @@ body {
      }
 
      .logo2 img {
-        top: 62%;
-        left: 10%;
+        height: 65px;
+        width: 120px;
+        top: 47%;
+        left: 52%;
      }
 
      .amy1 {
@@ -649,13 +651,13 @@ body {
 
       .location {
          font-size: 17px;
-         left: 57%;
-         top: 10%;
+         left: 55%;
+         top: 15%;
      }
 
      .address {
-      left: 50%;
-      top: 25%;
+      left: 48%;
+      top: 30%;
       font-size: 13px;
      }
 
@@ -684,6 +686,16 @@ body {
       position: absolute;
       top: 30%;
       left: 18%;
+   }
+
+   .footer1 {
+      font-size: 11px;
+      position: absolute;
+      left: 14%;
+   }
+
+   .footer2 {
+      display: none;
    }
 }
 
@@ -788,9 +800,11 @@ body {
      }
 
      .logo2 img {
-        top: 60%;
-        left: 17%;
-     }
+      height: 65px;
+      width: 120px;
+      top: 47%;
+      left: 52%;
+   }
 
      .amy1 {
       padding-top: 30px;
@@ -810,17 +824,17 @@ body {
       font-size: 13px;
    }
 
-    .location {
-       font-size: 17px;
-       left: 55%;
-       top: 10%;
-   }
+   .location {
+      font-size: 17px;
+      left: 55%;
+      top: 15%;
+  }
 
-   .address {
-    left: 50%;
-    top: 25%;
-    font-size: 13px;
-   }
+  .address {
+   left: 48%;
+   top: 30%;
+   font-size: 13px;
+  }
 
      .register {
       position: absolute;
@@ -847,6 +861,16 @@ body {
       position: absolute;
       top: 30%;
       left: 22%;
+   }
+
+   .footer1 {
+      font-size: 11px;
+      position: absolute;
+      left: 17%;
+   }
+
+   .footer2 {
+      display: none;
    }
 }
 
@@ -951,39 +975,41 @@ body {
      }
 
      .logo2 img {
-        top: 60%;
-        left: 17%;
-     }
+      height: 75px;
+      width: 130px;
+      top: 47%;
+      left: 52%;
+   }
 
      .amy1 {
       padding-top: 30px;
-      left: 10%;
+      left: 12%;
       font-size: 17px;
    }
 
    .phone {
       margin-top: 70px;
-      left: 13%;
+      left: 15%;
       font-size: 13px;
    }
 
    .email1 {
       margin-top: 110px;
-      left: 10%;
+      left: 12%;
       font-size: 13px;
    }
 
-    .location {
-       font-size: 17px;
-       left: 55%;
-       top: 10%;
-   }
+   .location {
+      font-size: 17px;
+      left: 55%;
+      top: 15%;
+  }
 
-   .address {
-    left: 50%;
-    top: 25%;
-    font-size: 13px;
-   }
+  .address {
+   left: 50%;
+   top: 30%;
+   font-size: 13px;
+  }
 
      .register {
       position: absolute;
@@ -1010,6 +1036,16 @@ body {
       position: absolute;
       top: 30%;
       left: 25%;
+   }
+
+   .footer1 {
+      font-size: 12px;
+      position: absolute;
+      left: 21%;
+   }
+
+   .footer2 {
+      display: none;
    }
 }
 
@@ -1115,37 +1151,39 @@ body {
      }
 
      .logo2 img {
-        top: 8%;
-        left: 32%;
+        top: 17%;
+        left: 39%;
+        height: 120px;
+        width: 200px;
      }
 
      .amy1 {
       padding-top: 50px;
-      left: 10%;
+      left: 13%;
       font-size: 19px;
    }
 
    .phone {
       margin-top: 90px;
-      left: 11%;
+      left: 14%;
       font-size: 15px;
    }
 
    .email1 {
       margin-top: 130px;
-      left: 10%;
+      left: 13%;
       font-size: 15px;
    }
 
     .location {
        font-size: 19px;
        left: 69%;
-       top: 18%;
+       top: 25%;
    }
 
    .address {
     left: 66%;
-    top: 29%;
+    top: 40%;
     font-size: 15px;
    }
 
@@ -1174,6 +1212,18 @@ body {
       position: absolute;
       top: 30%;
       left: 37%;
+   }
+
+   .footer1 {
+      font-size: 15px;
+      position: absolute;
+      left: 10%;
+   }
+   
+   .footer2 {
+      font-size: 15px;
+      position: absolute;
+      left: 65%;
    }
 }
 
@@ -1297,13 +1347,13 @@ body {
    }
 
    .phone {
-      margin-top: 100px;
+      margin-top: 90px;
       left: 13.5%;
       font-size: 18px;
    }
 
    .email1 {
-      margin-top: 140px;
+      margin-top: 130px;
       left: 12%;
       font-size: 18px;
    }
@@ -1311,12 +1361,12 @@ body {
     .location {
        font-size: 21px;
        left: 69%;
-       top: 18%;
+       top: 26%;
    }
 
    .address {
     left: 66%;
-    top: 33%;
+    top: 41%;
     font-size: 18px;
    }
 
@@ -1478,12 +1528,12 @@ body {
     .location {
        font-size: 24px;
        left: 69%;
-       top: 18%;
+       top: 25%;
    }
 
    .address {
     left: 66%;
-    top: 33%;
+    top: 45%;
     font-size: 21px;
    }
 
