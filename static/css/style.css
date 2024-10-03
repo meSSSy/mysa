@@ -742,6 +742,25 @@ body {
       top: 22%;
       left: 32%;
    }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 24%;
+      font-size: 17px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 47%;
+      left: 27%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
 }
 
 @media screen and (min-width: 326px) and (max-width: 375px) {
@@ -961,6 +980,25 @@ body {
       position: absolute;
       top: 22%;
       left: 32%;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 24%;
+      font-size: 17px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 44%;
+      left: 29%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
    }
 }
 
@@ -1189,6 +1227,25 @@ body {
       top: 119%;
       background-color: #fdd0cb;
       border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+      font-size: 17px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 44%;
+      left: 32%;
+      background-color: #fdd0cb;
       color: black;
       padding: 0.5rem 1rem;
       border-radius: 5px;
@@ -1431,6 +1488,25 @@ body {
       text-decoration: none;
       margin-right: 1rem;
    }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 32%;
+      font-size: 25px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 44%;
+      left: 39.5%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1650,6 +1726,25 @@ body {
       top: 50%;
       background-color: #fdd0cb;
       border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 20%;
+      left: 38%;
+      font-size: 25px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 37%;
+      left: 42%;
+      background-color: #fdd0cb;
       color: black;
       padding: 0.5rem 1rem;
       border-radius: 5px;
@@ -1883,6 +1978,25 @@ body {
       text-decoration: none;
       margin-right: 1rem;
    }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 19%;
+      left: 40%;
+      font-size: 29px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 34%;
+      left: 45%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
 }
 
 @media screen and (min-width: 1441px) {
@@ -2059,6 +2173,25 @@ body {
       top: 61%;
       background-color: #fdd0cb;
       border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 41.5%;
+      font-size: 29px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 45%;
+      left: 46%;
+      background-color: #fdd0cb;
       color: black;
       padding: 0.5rem 1rem;
       border-radius: 5px;
