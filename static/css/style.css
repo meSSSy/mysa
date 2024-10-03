@@ -544,7 +544,7 @@ body {
    .logo {
       position: absolute;
       top: 40%;
-      left: 25%;
+      left: 32%;
    }
 
     .hero img {
@@ -677,11 +677,6 @@ body {
       font-size: 22px;
    }
 
-   .btn {
-      position: absolute;
-      left: 35%;
-   }
-
    .login-page {
       position: absolute;
       top: 30%;
@@ -696,6 +691,44 @@ body {
 
    .footer2 {
       display: none;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin: 0;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -40%;
+      left: 33%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 110%;
    }
 }
 
@@ -852,11 +885,6 @@ body {
       font-size: 24px;
    }
 
-   .btn {
-      position: absolute;
-      left: 35%;
-   }
-
    .login-page {
       position: absolute;
       top: 30%;
@@ -871,6 +899,44 @@ body {
 
    .footer2 {
       display: none;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin: 0;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -40%;
+      left: 33%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
    }
 }
 
@@ -1027,11 +1093,6 @@ body {
       font-size: 26px;
    }
 
-   .btn {
-      position: absolute;
-      left: 35%;
-   }
-
    .login-page {
       position: absolute;
       top: 30%;
@@ -1046,6 +1107,44 @@ body {
 
    .footer2 {
       display: none;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 90%;
+      margin: 0;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -40%;
+      left: 33%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
    }
 }
 
@@ -1070,7 +1169,7 @@ body {
       position: absolute;
       height: 130px;
       top: 42%;
-      left: 36%;
+      left: 40%;
    }
 
     .hero img {
@@ -1203,11 +1302,6 @@ body {
       font-size: 29px;
    }
 
-   .btn {
-      position: absolute;
-      left: 35%;
-   }
-
    .login-page {
       position: absolute;
       top: 30%;
@@ -1224,6 +1318,44 @@ body {
       font-size: 15px;
       position: absolute;
       left: 65%;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 24%;
+      left: 39%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 90%;
+      margin-left: 40px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -20%;
+      left: 41%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
    }
 }
 
@@ -1387,9 +1519,43 @@ body {
       font-size: 34px;
    }
 
-   .btn {
+   .create h3 {
       position: absolute;
-      left: 35%;
+      top: 24%;
+      left: 40%;
+      font-size: 37px;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin-left: 160px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -30%;
+      left: 43%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
    }
 }
  
@@ -1555,9 +1721,43 @@ body {
       font-size: 34px;
    }
 
-   .btn {
+   .create h3 {
       position: absolute;
-      left: 35%;
+      top: 24%;
+      left: 40%;
+      font-size: 37px;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin-left: 210px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -30%;
+      left: 43%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
    }
 }
 
@@ -1683,6 +1883,45 @@ body {
      .book-now-btn3 {
         background: #5f511b;
      }
+
+     .create h3 {
+      position: absolute;
+      top: 24%;
+      left: 40%;
+      font-size: 37px;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 50%;
+      margin-left: 450px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -20%;
+      left: 42%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
+   }
 }
 
 

@@ -55,7 +55,7 @@ content="width=device-width, initial-scale=1.0">
             </div>
             <div class="create1">
             <h2>My Bookings</h2>
-            <a href="{% url 'create_booking' %}" class="btn btn-primary mb-3">Create Booking</a>
+            <a href="{% url 'create_booking' %}" class="btn-create btn-primary mb-3">Create Booking</a>
     
             {% if bookings %}
             <table class="table table-bordered">
@@ -87,4 +87,8 @@ content="width=device-width, initial-scale=1.0">
         </div>
         {% endblock %}
 
+       
+         <script src="script.js"></script>
+
+    </body>
 </html>
