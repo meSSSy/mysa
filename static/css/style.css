@@ -2198,6 +2198,13 @@ body {
       text-decoration: none;
       margin-right: 1rem;
    }
+
+   .create h3 {
+      position: absolute;
+      top: 24.5%;
+      left: 40.5%;
+      font-size: 37px;
+   }
 }
 
 
