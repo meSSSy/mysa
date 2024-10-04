@@ -1,37 +1,20 @@
+
 # Mysa
 
-![Logo](assets/images/mysa.logo.webp)
+![Logo](static/assets/images/mysalogob-g.webp)
 
 ## Description
 
-Mysa (Amy's) - A Beauty and Aesthetic business owned by my partner Amy McHugh. Mysa, a business run from home in a fantasically designed and styled building adjacent to the family home.
+Mysa - Anagram of 'Amy's' is a Beauty and Aesthetic website for my friend, Amy McHugh. A very talented and experiece therapist, loving mother, who has turned a barn into a lovely environment that is Mysa.
 
-## Planning
+You can view this site at https://mysa-cbc157c11393.herokuapp.com
 
-A Miro board was created where all ideas for the site were brainstormed.
 
-![Miro](assets/images/Miro-Board.webp)
+## Features
 
-And the colours associated with the logo which will be used throughout the website.
+* User registration, sign-in and logout: Simple intuitive pages for both new and previous users.
+* Booking page allowing registered users to book treatments at a time/date that suits their availability (depending on salon availability).
+* The option to edit or delete bookings should the user wish to change treatment, date or time, or even cancel the booking.
 
-![Colours](assets/images/Design-Colours.webp)
 
-## Wireframes
-
-### Landing page, sign in, contact and price list for mobile
-
-![Mobile](assets/images/Mobile1.webp)
-
-![Mobile2](assets/images/Mobile2.webp)
-
-### Tablet
-
-![Tablet1](assets/images/Tablet1.png)
-
-![Tablet2](assets/images/Tablet2.png)
-
-### Desktop
-
-![Desktop1](assets/images/Desktop1.png)
-
-![Desktop2](assets/images/Desktop2.png)
+![ Responsive](static/assets/images/Responsive.png)
