@@ -1,0 +1,2206 @@
+/* Navbar */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+   width: 100%;
+   height: 100px;
+   background-color: white;
+   padding: 1rem;
+   position: relative;
+}
+
+.navbar-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   height: 100%;
+}
+
+.logo img {
+   height: 130px;
+}
+
+.logo {
+   position: absolute;
+   top: 30%;
+}
+
+.menu-toggle {
+   display: none;
+}
+
+.hamburger {
+   display: none;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+.menu {
+   list-style-type: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+.menu li {
+   padding-top: 80px;
+   padding-left: 60px;
+   font-size: 22px;
+   margin-left: 1rem;
+}
+
+.menu a {
+   text-decoration: none;
+   color: #333;
+}
+
+.right-menu {
+   display: flex;
+   align-items: center;
+}
+
+.book-now-btn {
+   position: absolute;
+   left: 81%;
+   top: 69%;
+   background-color: #fdd0cb;
+   color: black;
+   font-weight: bold;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   text-decoration: none;
+   margin-right: 1rem;
+}
+
+.social-icons {
+   align-items: center;
+}
+
+.social-icon {
+   color: #333;
+   padding-top: 80px;
+   padding-left: 120px;
+   font-size: 2rem;
+   margin-left: 0.5rem;
+   text-decoration: none;
+}
+
+.mobile-only {
+   display: none;
+}
+
+@media screen and (max-width: 768px) {
+   .navbar {
+       height: auto;
+   }
+
+   .logo img {
+       height: 100px;
+       position: static;
+       margin-bottom: 1rem;
+   }
+
+   .hamburger {
+       display: block;
+       position: absolute;
+       top: 1rem;
+       right: 1rem;
+   }
+
+   .menu-wrapper {
+       position: absolute;
+       top: 100%;
+       left: 0%;
+       width: 100%;
+       background-color: white;
+       max-height: 0;
+       overflow: hidden;
+       transition: max-height 0.3s ease-out;
+       z-index: 3;
+   }
+
+   .menu {
+       flex-direction: column;
+   }
+
+   .desktop-only {
+       display: none;
+   }
+
+   .mobile-only {
+       display: block;
+   }
+
+   .menu-toggle:checked ~ .menu-wrapper {
+       max-height: 500px;
+   }
+
+   .right-menu {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .book-now-btn {
+       margin: 1rem 0;
+   }
+
+   .social-icons {
+       justify-content: center;
+       margin-top: 1rem;
+   }
+}
+
+/* Signed in message */
+
+.signin-message {
+   position: absolute;
+   top: 25%;
+   left: 70%;
+   z-index: 1;
+   background-color: #fdd0cb;
+   border-radius: 7%;
+}
+
+/* Hero image and buttons */
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 85%;
+    height: 750px; 
+    object-fit: cover; 
+    border: 2px solid #fdd0cb;
+}
+
+.hero h3 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book-now-btn1 {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    left: 23%;
+    background-color: #fdd0cb;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+.book-now-btn2 {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    left: 10%;
+    background-color: #cce7dd;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+/* Main page owner picture and description */
+
+.content-section {
+    padding: 50px 0;
+}
+
+.left-column img {
+    position: absolute;
+    left: 35%;
+    width: 380px;
+    height: 450px;
+    border: 1px solid #5f511b; 
+}
+
+.right-column {
+    display: flex;
+    align-items: center; 
+}
+
+.right-column p {
+    font-size: 18px;
+    line-height: 1.6;
+    width: 400px;
+    margin-top: 130px;
+}
+
+.name {
+    display: flex;
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+/* Main page gallery */
+
+.gallery {
+    margin-top: 200px;
+    margin-right: 0;
+}
+
+.gallery img {
+    height: 700px;
+    width: 580px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.gallery2 img {
+    height: 700px;
+    width: 580px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 12px;
+    margin-top: 20px;  
+    margin-right: 0;
+}
+
+/* Book consultation section */
+
+.consultation-section {
+    height: 400px;
+    width: 85%;
+    margin-top: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 110px;
+    background: #fdd0cb;
+    text-align: center;
+    justify-content: center;
+}
+
+.book-now-btn3 {
+    background-color: #fdd0cb;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+.book-now-btn4 {
+    background-color: #cce7dd;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+/* contact section */
+
+.contact-info {
+    height: 200px;
+    width: 100%;
+}
+
+.amy1 {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    padding-top: 70px;
+}
+
+.phone {
+    display: flex;
+    position: absolute;
+    left: 24%;
+    margin-top: 110px;
+}
+
+.email1 {
+    display: flex;
+    position: absolute;
+    left: 22%;
+    margin-top: 145px;
+}
+
+.logo2 img {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+.location {
+   position: absolute;
+   top: 27%;
+   left: 72%;
+}
+
+.address {
+   position: absolute;
+   left: 72%;
+   top: 48%;
+}
+
+/* Register page */
+
+.register {
+        position: absolute;
+        top: 25%;
+        left: 28%;
+}
+
+.login-page {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+}
+
+/* Registration Page */
+
+.register {
+   position: absolute;
+   top: 35%;
+   left: 35%;
+}
+
+.btn {
+   background-color: #fdd0cb;
+   color: black;
+}
+
+.btn1 {
+   position: absolute;
+   top: 60%;
+   left: 67%;
+   height: 35px;
+   width: 75px;
+   background-color: #fdd0cb;
+}
+
+.btn2 {
+   position: absolute;
+   top: 45%;
+   left: 46%;
+   height: 50px;
+   width: 150px;
+   background-color: #fdd0cb;
+   justify-content: center;
+   padding-top: 11px;
+   text-align: center;
+   color: black;
+   border-radius: 10px;
+}
+
+.register-here {
+   position: absolute;
+   top: 28%;
+   left: 42%;
+   z-index: 1;
+}
+
+/* Login Page */
+
+.login-page {
+   position: absolute;
+   top: 30%;
+   left: 41%;
+}
+
+/* Footer */
+
+.footer {
+   bottom: 0%;
+   width: 100%;
+   background-color: black;
+   color: white;
+   padding: 1rem;
+   height: 50px;
+}
+
+.footer1 {
+   position: absolute;
+   left: 20%;
+}
+
+.footer2 {
+   position: absolute;
+   left: 65%;
+}
+
+/* Booking Form */
+
+.container-form {
+   position: absolute;
+   top: 27%;
+   left: 38%;
+}
+
+.section-title {
+   position: absolute;
+   top: 27%;
+   left: 35%;
+}
+
+.text-center {
+   margin-top: 90px;
+   background-color: #cce7dd;
+}
+
+.text-center1 {
+   margin-top: 10px;
+   background-color: #cce7dd;
+}
+
+.text-center h3 {
+   position: absolute;
+   top: 22%;
+   left: 45%;
+}
+
+.text-center2 {
+   margin-top: 100px;
+   background-color: #cce7dd;
+   width: 100%;
+   height: 600px;
+}
+
+.text-center2 h3 {
+   position: absolute;
+   top: 27%;
+   left: 45%;
+}
+
+.text-center3 {
+   margin-top: 100px;
+   background-color: #cce7dd;
+   width: 100%;
+   height: 400px;
+   }
+
+.text-center3 h3 {
+   position: absolute;
+   top: 25%;
+   left: 42%;
+}
+
+.create1 {
+   position: absolute;
+   top: 37%;
+   left: 35%;
+}
+
+.table {
+  margin-top: 50px;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 320px) {
+   .signin-message {
+      font-size: 10px;
+      position: absolute;
+      left: 25%;
+      top: 20%;
+   }
+
+   .navbar {
+      height: 60px;
+   }
+
+   .navbar-container {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+   }
+
+   .logo {
+      position: absolute;
+      top: 40%;
+      left: 32%;
+   }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 71%;
+        left: 35%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 79%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 15%;
+        height: 250px;
+        width: 250px;
+    }
+
+    .right-column p {
+        font-size: 15px;
+        margin-top: 380px;
+        padding-left: 10px;
+     }
+
+     .name {
+        top: 46%;
+        left: 24%;
+     }
+
+     .gallery {
+        margin-top: 35px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 30px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 20px;
+     }
+
+     .logo2 img {
+        height: 65px;
+        width: 120px;
+        top: 47%;
+        left: 52%;
+     }
+
+     .amy1 {
+        padding-top: 30px;
+        left: 10%;
+        font-size: 17px;
+     }
+
+     .phone {
+        margin-top: 70px;
+        left: 13%;
+        font-size: 13px;
+     }
+
+     .email1 {
+        margin-top: 110px;
+        left: 10%;
+        font-size: 13px;
+     }
+
+      .location {
+         font-size: 17px;
+         left: 55%;
+         top: 15%;
+     }
+
+     .address {
+      left: 48%;
+      top: 30%;
+      font-size: 13px;
+     }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 1%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 30%;
+      left: 29%;
+      z-index: 1;
+      font-size: 22px;
+   }
+
+   .login-page {
+      position: absolute;
+      top: 30%;
+      left: 18%;
+   }
+
+   .footer1 {
+      font-size: 11px;
+      position: absolute;
+      left: 14%;
+   }
+
+   .footer2 {
+      display: none;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin: 0;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -40%;
+      left: 33%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 110%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 20%;
+      top: 20%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 32%;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 24%;
+      font-size: 17px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 47%;
+      left: 27%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+}
+
+@media screen and (min-width: 326px) and (max-width: 375px) {
+   .signin-message {
+      font-size: 10px;
+      position: absolute;
+      left: 30%;
+      top: 20%;
+   }
+
+   .navbar {
+      height: 60px;
+   }
+
+   .navbar-container {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+   }
+
+   .logo {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+   }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 71%;
+        left: 35%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 79%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 23%;
+        height: 250px;
+        width: 250px;
+    }
+
+    .right-column p {
+        font-size: 16px;
+        margin-top: 380px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 46%;
+        left: 33%;
+     }
+
+     .gallery {
+        margin-top: 35px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 30px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 35px;
+     }
+
+     .logo2 img {
+      height: 65px;
+      width: 120px;
+      top: 47%;
+      left: 52%;
+   }
+
+     .amy1 {
+      padding-top: 30px;
+      left: 10%;
+      font-size: 17px;
+   }
+
+   .phone {
+      margin-top: 70px;
+      left: 13%;
+      font-size: 13px;
+   }
+
+   .email1 {
+      margin-top: 110px;
+      left: 10%;
+      font-size: 13px;
+   }
+
+   .location {
+      font-size: 17px;
+      left: 55%;
+      top: 15%;
+  }
+
+  .address {
+   left: 48%;
+   top: 30%;
+   font-size: 13px;
+  }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 1%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 29%;
+      left: 29%;
+      z-index: 1;
+      font-size: 24px;
+   }
+
+   .login-page {
+      position: absolute;
+      top: 30%;
+      left: 22%;
+   }
+
+   .footer1 {
+      font-size: 11px;
+      position: absolute;
+      left: 17%;
+   }
+
+   .footer2 {
+      display: none;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin: 0;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -40%;
+      left: 33%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 25%;
+      top: 20%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 32%;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 24%;
+      font-size: 17px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 44%;
+      left: 29%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px){
+   .signin-message {
+      font-size: 10px;
+      position: absolute;
+      left: 32%;
+      top: 20%;
+   }
+
+   .navbar {
+      height: 60px;
+   }
+
+   .navbar-container {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+   }
+
+   .logo {
+      position: absolute;
+      top: 42%;
+      left: 33%;
+   }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 71%;
+        left: 35%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 79%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 23%;
+        height: 250px;
+        width: 250px;
+    }
+
+    .right-column p {
+        font-size: 16px;
+        margin-top: 380px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 46%;
+        left: 33%;
+     }
+
+     .gallery {
+        margin-top: 35px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 30px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 35px;
+     }
+
+     .logo2 img {
+      height: 75px;
+      width: 130px;
+      top: 47%;
+      left: 52%;
+   }
+
+     .amy1 {
+      padding-top: 30px;
+      left: 12%;
+      font-size: 17px;
+   }
+
+   .phone {
+      margin-top: 70px;
+      left: 15%;
+      font-size: 13px;
+   }
+
+   .email1 {
+      margin-top: 110px;
+      left: 12%;
+      font-size: 13px;
+   }
+
+   .location {
+      font-size: 17px;
+      left: 55%;
+      top: 15%;
+  }
+
+  .address {
+   left: 50%;
+   top: 30%;
+   font-size: 13px;
+  }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 1%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 29%;
+      left: 31%;
+      z-index: 1;
+      font-size: 26px;
+   }
+
+   .login-page {
+      position: absolute;
+      top: 30%;
+      left: 25%;
+   }
+
+   .footer1 {
+      font-size: 12px;
+      position: absolute;
+      left: 21%;
+   }
+
+   .footer2 {
+      display: none;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 90%;
+      margin: 0;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -40%;
+      left: 33%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 29%;
+      top: 20%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 32%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 40%;
+      top: 119%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 28%;
+      font-size: 17px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 44%;
+      left: 32%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+   .signin-message {
+      font-size: 14px;
+      position: absolute;
+      left: 62%;
+      top: 23%;
+   }
+
+   .navbar {
+      height: 60px;
+   }
+
+   .navbar-container {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+   }
+
+   .logo {
+      position: absolute;
+      height: 130px;
+      top: 42%;
+      left: 40%;
+   }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 5%;
+        height: 350px;
+        width: 300px;
+    }
+
+    .right-column p {
+        font-size: 16px;
+        margin-top: 100px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 0%;
+        left: 28%;
+     }
+
+     .gallery {
+        margin-top: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 50px;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 60px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 45px;
+     }
+
+     .logo2 img {
+        top: 17%;
+        left: 39%;
+        height: 120px;
+        width: 200px;
+     }
+
+     .amy1 {
+      padding-top: 50px;
+      left: 13%;
+      font-size: 19px;
+   }
+
+   .phone {
+      margin-top: 90px;
+      left: 14%;
+      font-size: 15px;
+   }
+
+   .email1 {
+      margin-top: 130px;
+      left: 13%;
+      font-size: 15px;
+   }
+
+    .location {
+       font-size: 19px;
+       left: 69%;
+       top: 25%;
+   }
+
+   .address {
+    left: 66%;
+    top: 40%;
+    font-size: 15px;
+   }
+
+     .register {
+      position: absolute;
+      top: 35%;
+      left: 19%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 29%;
+      left: 39%;
+      z-index: 1;
+      font-size: 29px;
+   }
+
+   .login-page {
+      position: absolute;
+      top: 30%;
+      left: 37%;
+   }
+
+   .footer1 {
+      font-size: 15px;
+      position: absolute;
+      left: 10%;
+   }
+   
+   .footer2 {
+      font-size: 15px;
+      position: absolute;
+      left: 65%;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 24%;
+      left: 39%;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 90%;
+      margin-left: 40px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -20%;
+      left: 41%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 37%;
+      top: 20%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 42%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 63%;
+      top: 65%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 32%;
+      font-size: 25px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 44%;
+      left: 39.5%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+   .signin-message {
+      font-size: 14px;
+      position: absolute;
+      left: 62%;
+      top: 23%;
+   }
+
+   .logo {
+      position: absolute;
+      left: 3%;
+      top: 20%;
+   }
+
+   .menu li {
+      padding-top: 80px;
+      padding-left: 10px;
+      font-size: 18px;
+      margin-left: 1rem;
+   }
+
+   .social-icon {
+      color: #333;
+      padding-top: 80px;
+      padding-left: 30px;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+   }
+
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 5%;
+        height: 450px;
+        width: 375px;
+    }
+
+    .right-column p {
+        font-size: 19px;
+        margin-top: 100px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 0%;
+        left: 28%;
+     }
+
+     .gallery {
+        margin-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+     .gallery img {
+        height: 300px;
+        width: 200px;
+        margin-top: 50px;
+     }
+
+     .gallery2 img {
+        height: 300px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 28px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 60px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 45px;
+     }
+
+     .logo2 img {
+        top: 12%;
+        left: 37%;
+     }
+
+     .amy1 {
+      padding-top: 50px;
+      left: 13%;
+      font-size: 21px;
+   }
+
+   .phone {
+      margin-top: 90px;
+      left: 13.5%;
+      font-size: 18px;
+   }
+
+   .email1 {
+      margin-top: 130px;
+      left: 12%;
+      font-size: 18px;
+   }
+
+    .location {
+       font-size: 21px;
+       left: 69%;
+       top: 26%;
+   }
+
+   .address {
+    left: 66%;
+    top: 41%;
+    font-size: 18px;
+   }
+
+     .register {
+      height: 400px;
+      position: absolute;
+      top: 35%;
+      left: 29%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 27%;
+      left: 41%;
+      z-index: 1;
+      font-size: 34px;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 24%;
+      left: 40%;
+      font-size: 37px;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin-left: 160px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -30%;
+      left: 43%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 41%;
+      top: 18%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 22%;
+      left: 43%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 63%;
+      top: 50%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 20%;
+      left: 38%;
+      font-size: 25px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 37%;
+      left: 42%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+}
+ 
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+   .signin-message {
+      font-size: 18px;
+      position: absolute;
+      left: 65%;
+      top: 23%;
+   }
+
+
+   .logo {
+      position: absolute;
+      left: 3%;
+      top: 20%;
+   }
+
+   .menu li {
+      padding-top: 80px;
+      padding-left: 50px;
+      font-size: 20px;
+      margin-left: 1rem;
+   }
+
+   .social-icon {
+      color: #333;
+      padding-top: 80px;
+      padding-left: 60px;
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+   }
+
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 65%;
+        left: 15%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 5%;
+        height: 450px;
+        width: 375px;
+    }
+
+    .right-column p {
+        font-size: 22px;
+        margin-top: 100px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 0%;
+        left: 21%;
+     }
+
+     .gallery {
+        margin-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+     .gallery img {
+        height: 400px;
+        width: 300px;
+        margin-top: 50px;
+     }
+
+     .gallery2 img {
+        height: 400px;
+        width: 300px;
+        margin-top: 5px;
+        margin-left: 28px;
+        padding: 0;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 60px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 45px;
+     }
+
+     .logo2 img {
+        top: 12%;
+        left: 39%;
+     }
+
+     .amy1 {
+      padding-top: 50px;
+      left: 13%;
+      font-size: 24px;
+   }
+
+   .phone {
+      margin-top: 105px;
+      left: 13%;
+      font-size: 21px;
+   }
+
+   .email1 {
+      margin-top: 150px;
+      left: 12%;
+      font-size: 21px;
+   }
+
+    .location {
+       font-size: 24px;
+       left: 69%;
+       top: 25%;
+   }
+
+   .address {
+    left: 66%;
+    top: 45%;
+    font-size: 21px;
+   }
+
+
+     .register {
+      height: 400px;
+      position: absolute;
+      top: 30%;
+      left: 34%;
+      padding-left: 5px;
+      padding-right: 5px;
+   }
+
+   .register-here {
+      position: absolute;
+      top: 23%;
+      left: 43%;
+      z-index: 1;
+      font-size: 34px;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 24%;
+      left: 40%;
+      font-size: 37px;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 70%;
+      margin-left: 210px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -30%;
+      left: 43%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
+   }
+
+   .container2 h3 {
+      position: absolute;
+      left: 44%;
+      top: 18%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 21%;
+      left: 46%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 66%;
+      top: 47%;
+      background-color: #fdd0cb;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 19%;
+      left: 40%;
+      font-size: 29px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 34%;
+      left: 45%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+}
+
+@media screen and (min-width: 1441px) {
+   .logo {
+      position: absolute;
+      left: 15%;
+      top: 20%;
+   }
+
+   .menu li {
+      padding-top: 80px;
+      padding-left: 90px;
+      font-size: 24px;
+      margin-left: 1rem;
+   }
+
+   .social-icon {
+      color: #333;
+      padding-top: 80px;
+      padding-left: 120px;
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+   }
+
+    .hero img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .hero h3 {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+    }
+
+    .book-now-btn1 {
+        position: absolute;
+        top: 65%;
+        left: 25%;
+    }
+
+    .book-now-btn2 {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+    }
+
+    .left-column img {
+        position: absolute;
+        left: 7%;
+        height: 500px;
+        width: 425px;
+    }
+
+    .right-column p {
+        font-size: 22px;
+        margin-top: 100px;
+        padding-left: 20px;
+     }
+
+     .name {
+        top: 0%;
+        left: 16%;
+     }
+
+     .gallery {
+        margin-top: 130px;
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+
+     .gallery img {
+        height: 500px;
+        width: 400px;
+        margin-top: 50px;
+     }
+
+     .gallery2 img {
+        height: 500px;
+        width: 400px;
+        margin-top: 50px;
+     }
+
+     .consultation-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+        padding: 60px;
+     }
+
+     .contact-info {
+        width: 100%;
+     }
+
+     .email {
+        margin-bottom: 45px;
+     }
+
+     .logo2 img {
+        top: 9%;
+        left: 42%;
+     }
+
+     .amy1 {
+        padding-top: 50px;
+        left: 15%;
+     }
+
+     .phone {
+        margin-top: 100px;
+        left: 17%;
+     }
+
+     .email1 {
+        margin-top: 140px;
+        left: 16%;
+     }
+
+     .book-now-btn3 {
+        background: #5f511b;
+     }
+
+     .create h3 {
+      position: absolute;
+      top: 24%;
+      left: 40%;
+      font-size: 37px;
+   }
+
+   .create1 {
+      width: 100%;
+      padding: 0 5px;
+      position: absolute;
+      left: 1%;
+   }
+
+   .table {
+      width: 50%;
+      margin-left: 450px;
+   }
+
+   .btn-create {
+      position: absolute;
+      top: -20%;
+      left: 42%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create1 h2 {
+      display: none;
+   }
+
+   .text-center2 {
+      width: 100%;
+   }
+
+   .text-center2 h3 {
+      position: absolute;
+      top: 26%;
+      left: 45%;
+   }
+
+   .btn5 {
+      position: absolute;
+      left: 66%;
+      top: 61%;
+      border-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .text-center3 h3 {
+      position: absolute;
+      top: 23%;
+      left: 41.5%;
+      font-size: 29px;
+   }
+
+   .btn6 {
+      position: absolute;
+      top: 45%;
+      left: 46%;
+      background-color: #fdd0cb;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-right: 1rem;
+   }
+
+   .create h3 {
+      position: absolute;
+      top: 24.5%;
+      left: 40.5%;
+      font-size: 37px;
+   }
+}
+
+
