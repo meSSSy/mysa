@@ -101,3 +101,15 @@ Performance is down due to size of image files. These will need to be compressed
 
 
 ## Credits
+
+Huge thanks goes to John Reardon from Code Institute for putting up with me for the past 3 weeks. Somehow he remained extremely calm throughout our numerous video calls.
+
+Amy Richardson and Mark Briscoe for their incredible support and guidance over the last 16 weeks. Really couldn't have done this without them.
+
+Amy McHugh for supplying the Mysa logo, colour schemes and images.
+
+Moose Photos, Cottonbro Studio and Anna Schvets for images taken via www.pexels.com.
+
+Chat GPT and Perplexity for helping with a few aspects of code.
+
+Fonts and any future fonts taken from Google Fonts.
