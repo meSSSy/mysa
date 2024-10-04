@@ -13,6 +13,7 @@ from django.views.generic import (
     UpdateView
 )
 
+
 class BookingsPage(LoginRequiredMixin, ListView):
     """
     View booking page
@@ -20,6 +21,7 @@ class BookingsPage(LoginRequiredMixin, ListView):
     model = Booking
     template_name = 'booking.html'
     context_object_name = 'bookings'
+
 
 class CreateBooking(LoginRequiredMixin, CreateView):
     """
@@ -43,7 +45,8 @@ class CreateBooking(LoginRequiredMixin, CreateView):
 
         # Check if date is in the past
         if (selected_date < current_datetime.date() or
-            (selected_date == current_datetime.date() and selected_time < current_datetime.time())):
+           (selected_date == current_datetime.date(
+                ) and selected_time < current_datetime.time())):
             form.add_error('day', 'Great Scott! Do you have a time machine?')
             return self.form_invalid(form)
 
@@ -61,6 +64,7 @@ class CreateBooking(LoginRequiredMixin, CreateView):
 
         messages.success(self.request, "Your booking has been saved.")
         return super().form_valid(form)
+
 
 class BookingEdit(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
@@ -92,6 +96,7 @@ class BookingEdit(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
         messages.success(self.request, "Your booking has been saved.")
         return super().form_valid(form)
+
 
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """

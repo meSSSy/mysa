@@ -69,3 +69,25 @@ A total of 13 User Stories of which 10 have been implemented. 3 to be added at l
 Lots of bugs encountered, mainly with the booking form using Django/Python. Spelling mistakes and wrong class names was the main issue.
 
 Fixed the drop down menu when in mobile/tablet size. Added z-index to ensure the menu appeared above the hero image instead of behind it.
+
+
+## Validator Testing
+
+#### CSS
+
+![CSS](static/assets/images/css.png)
+
+#### HTML
+
+
+#### Python
+
+![Form](static/assets/images/forms.png)
+
+! [booking-urls](static/assets/images/booking-urls.png)
+
+![booking-views](static/assets/images/booking-views.png)
+
+![register-urls](static/assets/images/register-urls.png)
+
+![signin-urls](static/assets/images/signin-urls.png)

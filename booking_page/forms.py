@@ -3,9 +3,9 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from .models import Booking
 
+
 class BookingForm(forms.ModelForm):
     """A form to create a booking"""
-
     first_name = forms.CharField(max_length=100, required=True, label="First Name")
     last_name = forms.CharField(max_length=100, required=True, label="Last Name")
     email = forms.EmailField(required=True)
