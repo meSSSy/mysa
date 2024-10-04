@@ -91,3 +91,13 @@ Fixed the drop down menu when in mobile/tablet size. Added z-index to ensure the
 ![register-urls](static/assets/images/register-urls.png)
 
 ![signin-urls](static/assets/images/signin-urls.png)
+
+
+#### Lighthouse
+
+Performance is down due to size of image files. These will need to be compressed
+
+! [Lighthouse](static/assets/images/Lighthouse.png)
+
+
+## Credits
